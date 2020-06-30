@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Axios</title>
+    <style>
+        body {
+            padding: 30px
+        }
+
+        h3 {
+            margin-top: 40px;
+        }
+
+        .grid {
+            display: flex;
+        }
+
+        .grid>article {
+            width: 33.33%
+        }
+
+        #characterEdit {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>App de personajes</h1>
+
+    <hr>
+
+    <div class="grid">
+        <article>
+
+            <h3>Crea tu personaje!</h3>
+
+            <form id="newCharacter">
+                <input type="text" placeholder="Nombre"><br>
+                <input type="text" placeholder="Ocupación"><br>
+                <input type="text" placeholder="Arma"><br>
+                <input type="submit" value="Enviar"><br>
+            </form>
+
+        </article>
+        <article>
+
+            <h3>Edita tu personaje!</h3>
+            <form id="charaterId">
+                <input type="text" placeholder="Id del personaje"><br>
+                <input type="submit" value="Cargar datos del personaje">
+            </form>
+
+            <br>
+
+            <form id="characterEdit">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="submit" value="Modificar Personaje">
+            </form>
+
+
+        </article>
+        <article>
+
+            <h3>Personajes actuales</h3>
+            <ul id="list"></ul>
+
+        </article>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
